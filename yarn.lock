@@ -1958,6 +1958,39 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
+"@tanstack/query-async-storage-persister@^5.25.0":
+  version "5.25.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-async-storage-persister/-/query-async-storage-persister-5.25.0.tgz#0e8a2a781b8e32a81a5d02a688d6fcdfd055235b"
+  integrity sha512-58UTp1CuLr2mehsJRMOd8IZPtYGHFeL+uHnHyRd1kmbwo7wDaa8HXstiBdTRq5KokxIXy9FiFbA06LtKuOiwMQ==
+  dependencies:
+    "@tanstack/query-persist-client-core" "5.25.0"
+
+"@tanstack/query-core@5.25.0":
+  version "5.25.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.25.0.tgz#e08ed0a9fad34c8005d1a282e57280031ac50cdc"
+  integrity sha512-vlobHP64HTuSE68lWF1mEhwSRC5Q7gaT+a/m9S+ItuN+ruSOxe1rFnR9j0ACWQ314BPhBEVKfBQ6mHL0OWfdbQ==
+
+"@tanstack/query-persist-client-core@5.25.0":
+  version "5.25.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-persist-client-core/-/query-persist-client-core-5.25.0.tgz#52fa634a8067d7b965854a532a33077fd4df0eff"
+  integrity sha512-sEUsEZ/XWkOosO45CDBI5nj5woCS+DUd9Dk8pGpU8MkeH0EVd3p4N5CdbjNhrreyy5Krf3rpNaiRN9ygLX/rWA==
+  dependencies:
+    "@tanstack/query-core" "5.25.0"
+
+"@tanstack/react-query-persist-client@^5.25.0":
+  version "5.25.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query-persist-client/-/react-query-persist-client-5.25.0.tgz#ecbd1362cd6fd94e723d54f5af477d0812852dab"
+  integrity sha512-j1+GyFj4UQGWuiFZoDUVJZS+wxqKd9SGvPlyHG619zzYNN+QQu4B5uvvHc6U8MroM377EOBOuLKK3W6qsAdahQ==
+  dependencies:
+    "@tanstack/query-persist-client-core" "5.25.0"
+
+"@tanstack/react-query@^5.25.0":
+  version "5.25.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.25.0.tgz#f4dac794cf10dd956aa56dbbdf67049a5ba2669d"
+  integrity sha512-u+n5R7mLO7RmeiIonpaCRVXNRWtZEef/aVZ/XGWRPa7trBIvGtzlfo0Ah7ZtnTYfrKEVwnZ/tzRCBcoiqJ/tFw==
+  dependencies:
+    "@tanstack/query-core" "5.25.0"
+
 "@types/babel__core@^7.1.14":
   version "7.20.5"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.20.5.tgz#3df15f27ba85319caa07ba08d0721889bb39c017"
@@ -5681,6 +5714,11 @@ react-native-config@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/react-native-config/-/react-native-config-1.5.1.tgz#73c94f511493e9b7ff9350cdf351d203a1b05acc"
   integrity sha512-g1xNgt1tV95FCX+iWz6YJonxXkQX0GdD3fB8xQtR1GUBEqweB9zMROW77gi2TygmYmUkBI7LU4pES+zcTyK4HA==
+
+react-native-encrypted-storage@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-encrypted-storage/-/react-native-encrypted-storage-4.0.3.tgz#2a4d65459870511e8f4ccd22f02433dab7fa5e91"
+  integrity sha512-0pJA4Aj2S1PIJEbU7pN/Qvf7JIJx3hFywx+i+bLHtgK0/6Zryf1V2xVsWcrD50dfiu3jY1eN2gesQ5osGxE7jA==
 
 react-native-gesture-handler@^2.15.0:
   version "2.15.0"

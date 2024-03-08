@@ -4,15 +4,23 @@ import React, {FC} from 'react';
 import {StyleSheet} from 'react-native';
 import Home from './screens/Home/Home';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {PersistQueryClientProvider} from '@tanstack/react-query-persist-client';
+import appQueryClient, {asyncStoragePersister} from './config/appQueryClient';
 
 type AppProps = {};
 
 const App: FC<AppProps> = ({}) => {
   return (
     <GestureHandlerRootView style={styles.container}>
-      <NavigationContainer>
-        <Home />
-      </NavigationContainer>
+      <PersistQueryClientProvider
+        client={appQueryClient}
+        persistOptions={{
+          persister: asyncStoragePersister,
+        }}>
+        <NavigationContainer>
+          <Home />
+        </NavigationContainer>
+      </PersistQueryClientProvider>
     </GestureHandlerRootView>
   );
 };
