@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import routes from './routes';
-import Home from '../screens/Home/Home';
+import Home from '../screens/Home';
 
 type MainNavigationProps = {};
 const Stack = createStackNavigator();
