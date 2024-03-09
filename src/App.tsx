@@ -1,4 +1,5 @@
 import 'react-native-gesture-handler';
+import 'react-native-devsettings';
 import {NavigationContainer} from '@react-navigation/native';
 import React, {FC} from 'react';
 import {StyleSheet} from 'react-native';
