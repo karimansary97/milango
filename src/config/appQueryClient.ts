@@ -5,7 +5,8 @@ import EncryptedStorage from 'react-native-encrypted-storage';
 const appQueryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      gcTime: 0, // 0 hours caching
+      gcTime: 5 * 60 * 1000,
+      staleTime: 5 * 60 * 1000,
     },
   },
 });
