@@ -8,6 +8,7 @@ import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {PersistQueryClientProvider} from '@tanstack/react-query-persist-client';
 import appQueryClient, {asyncStoragePersister} from './config/appQueryClient';
 import RNBootSplash from 'react-native-bootsplash';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 type AppProps = {};
 
@@ -17,17 +18,19 @@ const App: FC<AppProps> = ({}) => {
   };
 
   return (
-    <GestureHandlerRootView style={styles.container}>
-      <PersistQueryClientProvider
-        client={appQueryClient}
-        persistOptions={{
-          persister: asyncStoragePersister,
-        }}>
+    <SafeAreaProvider>
+      <GestureHandlerRootView style={styles.container}>
         <NavigationContainer onReady={onNavReady}>
-          <Home />
+          <PersistQueryClientProvider
+            client={appQueryClient}
+            persistOptions={{
+              persister: asyncStoragePersister,
+            }}>
+            <Home />
+          </PersistQueryClientProvider>
         </NavigationContainer>
-      </PersistQueryClientProvider>
-    </GestureHandlerRootView>
+      </GestureHandlerRootView>
+    </SafeAreaProvider>
   );
 };
 
