@@ -1,0 +1,1 @@
+- Add Splash screen [#NewFeature](https://github.com/karimansary97/milango/pull/1)
