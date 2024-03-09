@@ -12,7 +12,7 @@
   "dependencies": {
     "@react-native-masked-view/masked-view": "^0.3.1",
     "@react-navigation/native": "^6.1.14",
-    "@react-navigation/stack": "^6.3.25",
+    "@react-navigation/native-stack": "^6.9.23",
     "@tanstack/query-async-storage-persister": "^5.25.0",
     "@tanstack/react-query": "^5.25.0",
     "@tanstack/react-query-persist-client": "^5.25.0",
@@ -37,12 +37,12 @@
     "@react-native/typescript-config": "0.73.1",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
-    "react-native-svg-transformer": "^1.0.0",
     "babel-jest": "^29.6.3",
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
     "react-native-config": "^1.5.1",
+    "react-native-svg-transformer": "^1.0.0",
     "react-test-renderer": "18.2.0",
     "typescript": "5.0.4"
   },

@@ -1,1 +1,3 @@
-export default Object.freeze({});
+export default Object.freeze({
+  Find_Users: 'search/users?',
+});
