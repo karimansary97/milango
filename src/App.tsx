@@ -7,10 +7,15 @@ import Home from './screens/Home/Home';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {PersistQueryClientProvider} from '@tanstack/react-query-persist-client';
 import appQueryClient, {asyncStoragePersister} from './config/appQueryClient';
+import RNBootSplash from 'react-native-bootsplash';
 
 type AppProps = {};
 
 const App: FC<AppProps> = ({}) => {
+  const onNavReady = () => {
+    RNBootSplash.hide({fade: true});
+  };
+
   return (
     <GestureHandlerRootView style={styles.container}>
       <PersistQueryClientProvider
@@ -18,7 +23,7 @@ const App: FC<AppProps> = ({}) => {
         persistOptions={{
           persister: asyncStoragePersister,
         }}>
-        <NavigationContainer>
+        <NavigationContainer onReady={onNavReady}>
           <Home />
         </NavigationContainer>
       </PersistQueryClientProvider>
