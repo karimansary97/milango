@@ -2,4 +2,6 @@
 
 - Add HomeScreen [#NewFeature](https://github.com/karimansary97/milango/pull/2)
 
-- Add UserRepos [#NewFeature](https://github.com/karimansary97/milango/pull/3)
+- Add UserRepos Screen [#NewFeature](https://github.com/karimansary97/milango/pull/3)
+
+- Add type for UserRepos [#Enhancement](https://github.com/karimansary97/milango/pull/4)

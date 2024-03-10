@@ -8,9 +8,10 @@ import ListFooterLoading from '../UIElements/ListFooterLoading';
 import Loading from '../UIElements/Loading';
 import ErrorHappen from '../UIElements/ErrorHappen';
 import NoDataFound from '../UIElements/NoDataFound';
+import UserRepoType, {UserRepoData} from '../../types/UserRepo.type';
 
 type ReposListProps = {
-  data: any;
+  data: UserRepoType;
   loading: boolean;
   hasNextPage: boolean;
   isError: boolean;
@@ -29,7 +30,7 @@ const ReposList: FC<ReposListProps> = ({
   refetch,
 }) => {
   const renderItem = useCallback(
-    ({item}: any) => (
+    ({item}: {item: UserRepoData}) => (
       <RepoCard
         name={item?.name}
         language={item?.language}
