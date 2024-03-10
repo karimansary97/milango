@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import {StyleSheet, View, ActivityIndicator} from 'react-native';
 import unit from '../../styles/unit';
+import colors from '../../styles/colors';
 
 type ListFooterLoadingProps = {
   hasLoading: boolean;
@@ -9,7 +10,7 @@ type ListFooterLoadingProps = {
 const ListFooterLoading: FC<ListFooterLoadingProps> = ({hasLoading}) => {
   return (
     <View style={styles.container}>
-      {hasLoading && <ActivityIndicator color={'white'} />}
+      {hasLoading && <ActivityIndicator color={colors.white} />}
     </View>
   );
 };

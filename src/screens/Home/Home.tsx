@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useCallback, useState} from 'react';
 import {
   NativeSyntheticEvent,
   StyleSheet,
@@ -16,14 +16,20 @@ type HomeProps = {};
 
 const Home: FC<HomeProps> = ({}) => {
   const [searchQuery, setSearchQuery] = useState('');
-  const onSubmitEditing = ({
-    nativeEvent: {text},
-  }: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => {
-    setSearchQuery(text);
-  };
-  const onClear = () => {
+
+  const onSubmitEditing = useCallback(
+    ({
+      nativeEvent: {text},
+    }: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => {
+      setSearchQuery(text);
+    },
+    [],
+  );
+
+  const onClear = useCallback(() => {
     setSearchQuery('');
-  };
+  }, []);
+
   const {
     data,
     isLoading,

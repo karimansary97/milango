@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import routes from './routes';
 import Home from '../screens/Home';
-import UserRepo from '../screens/UserRepo';
+import UserRepos from '../screens/UserRepos';
 
 type MainNavigationProps = {};
 const Stack = createNativeStackNavigator();
@@ -16,7 +16,7 @@ const MainNavigation: FC<MainNavigationProps> = () => {
         animation: 'slide_from_right',
       }}>
       <Stack.Screen name={routes.Home} component={Home} />
-      <Stack.Screen name={routes.UserRepos} component={UserRepo} />
+      <Stack.Screen name={routes.UserRepos} component={UserRepos} />
     </Stack.Navigator>
   );
 };
