@@ -5,6 +5,7 @@ import EndPoints from '../../apis/EndPoints';
 import useGetInfiniteQuery from '../../hooks/useGetInfiniteQuery';
 import useRoute from '../../hooks/useRoute';
 import ReposList from '../../components/ReposList';
+import UserRepoType from '../../types/UserRepo.type';
 
 type UserReposProps = {};
 
@@ -27,7 +28,7 @@ const UserRepos: FC<UserReposProps> = ({}) => {
   return (
     <Layout style={styles.container} HeaderVisablity>
       <ReposList
-        data={data}
+        data={data as UserRepoType}
         loading={isLoading || isFetching}
         hasNextPage={hasNextPage}
         isError={isError}
