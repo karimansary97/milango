@@ -19,7 +19,9 @@ https://github.com/karimansary97/milango/assets/46077002/4e58144e-2587-4db0-9079
 
 use Memo,useMemo and useCallback to optimize useless rendering and enhance the performance app .
 
->**Note**: I should use react-native-fast-image  for images and caching it but i didn't do that . 
+>**Note**: I should use react-native-fast-image  for images and caching it but i didn't do that .
+> the error message you see happen because using  deperacted react native debugger .
+> and if you have qouestions in this point please contact me .
 
 https://github.com/karimansary97/milango/assets/46077002/b71eaf67-2f69-448e-b9e8-ef1167f07bab
 
