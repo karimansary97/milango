@@ -8,6 +8,15 @@
 https://github.com/karimansary97/milango/assets/46077002/be9a9ca8-480d-4ed7-9388-90e0b88db6da
 
 
+### Cachhing optimzation 
+
+
+
+
+https://github.com/karimansary97/milango/assets/46077002/4e58144e-2587-4db0-9079-6e4e6f54d25d
+
+
+
 ## Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
@@ -37,7 +46,7 @@ yarn ios
 ```
 
 ### For Android
->**Note**: make sure you have jdk more than 17  and config it path in HealthPay/android/gradle.properties and put your jdk path example org.gradle.java.home=/Library/Java/JavaVirtualMachines/jdk-17.jdk/contents/Home
+>**Note**: make sure you have jdk more than 17  and config it path in milango/android/gradle.properties and put your jdk path example org.gradle.java.home=/Library/Java/JavaVirtualMachines/jdk-17.jdk/contents/Home
 
 ```bash
 # step 
