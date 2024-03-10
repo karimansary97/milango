@@ -8,13 +8,11 @@
 https://github.com/karimansary97/milango/assets/46077002/be9a9ca8-480d-4ed7-9388-90e0b88db6da
 
 
-### Cachhing optimzation 
+### Caching and pagenation 
 
-
-
+use cahching and pagenation for calling the backend apis to optimize the load on server by react query .
 
 https://github.com/karimansary97/milango/assets/46077002/4e58144e-2587-4db0-9079-6e4e6f54d25d
-
 
 
 ## Getting Started
