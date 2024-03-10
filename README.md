@@ -15,6 +15,17 @@ use cahching and pagenation for calling the backend apis to optimize the load on
 https://github.com/karimansary97/milango/assets/46077002/4e58144e-2587-4db0-9079-6e4e6f54d25d
 
 
+### performance optimization
+
+use Memo,useMemo and useCallback to optimize useless rendering and enhance the performance app .
+
+>**Note**: I should use react-native-fast-image  for images and caching it but i didn't do that . 
+
+https://github.com/karimansary97/milango/assets/46077002/b71eaf67-2f69-448e-b9e8-ef1167f07bab
+
+
+
+
 ## Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
