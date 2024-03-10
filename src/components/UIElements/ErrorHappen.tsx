@@ -8,7 +8,7 @@ const ErrorHappen: FC<ErrorHappenProps> = () => {
   return (
     <View style={styles.container}>
       <Text bold size="xlarge">
-        Error Happen...
+        Error Happen...PleaseTry Later
       </Text>
     </View>
   );

@@ -1,16 +1,16 @@
 import React, {FC, memo, useCallback} from 'react';
-import {StyleSheet, View, FlatList, RefreshControl} from 'react-native';
+import {StyleSheet, View, FlatList} from 'react-native';
+import {RefreshControl} from 'react-native-gesture-handler';
+import colors from '../../styles/colors';
 import unit from '../../styles/unit';
-import UserCard from './UserCard';
-import NoDataFound from '../UIElements/NoDataFound';
+import RepoCard from './RepoCard';
+import ListFooterLoading from '../UIElements/ListFooterLoading';
 import Loading from '../UIElements/Loading';
 import ErrorHappen from '../UIElements/ErrorHappen';
-import ListFooterLoading from '../UIElements/ListFooterLoading';
-import Users from '../../types/Users.type';
-import colors from '../../styles/colors';
+import NoDataFound from '../UIElements/NoDataFound';
 
-type UserListProps = {
-  data: Users;
+type ReposListProps = {
+  data: any;
   loading: boolean;
   hasNextPage: boolean;
   isError: boolean;
@@ -19,7 +19,7 @@ type UserListProps = {
   refetch: () => void;
 };
 
-const UserList: FC<UserListProps> = ({
+const ReposList: FC<ReposListProps> = ({
   data,
   loading,
   isError,
@@ -30,10 +30,10 @@ const UserList: FC<UserListProps> = ({
 }) => {
   const renderItem = useCallback(
     ({item}: any) => (
-      <UserCard
-        name={item?.login}
-        image={item?.avatar_url}
-        sharedUrl={item?.url}
+      <RepoCard
+        name={item?.name}
+        language={item?.language}
+        stars={item?.stargazers_count}
       />
     ),
     [],
@@ -46,8 +46,9 @@ const UserList: FC<UserListProps> = ({
     return <ErrorHappen />;
   }
   if (!data?.length) {
-    return <NoDataFound des="Please search for user" />;
+    return <NoDataFound des="That user didn't have any repos" />;
   }
+
   return (
     <View style={styles.container}>
       <FlatList
@@ -77,11 +78,10 @@ const UserList: FC<UserListProps> = ({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 10 * unit,
   },
   content: {
     paddingVertical: 10 * unit,
   },
 });
 
-export default memo(UserList);
+export default memo(ReposList);

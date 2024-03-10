@@ -10,14 +10,15 @@ import useNavigation from '../../../hooks/useNavigation';
 type HeaderProps = {};
 
 const Header: FC<HeaderProps> = () => {
-  const {name} = useRoute();
+  const {name, params} = useRoute();
+  const {name: customeName} = params;
   const {goBack} = useNavigation();
 
   return (
     <View style={styles.container}>
       <Button Icon={BackButtonIcon} onPress={goBack} />
       <Text size="xxlarge" color="white">
-        {name}
+        {customeName || name}
       </Text>
     </View>
   );

@@ -18,7 +18,7 @@ const UserCard: FC<UserCardProps> = ({name, image, sharedUrl}) => {
   const {navigate} = useNavigation();
 
   const handleOnCardPress = () => {
-    navigate(routes.UserRepos);
+    navigate(routes.UserRepos, {name});
   };
   return (
     <Swipeable

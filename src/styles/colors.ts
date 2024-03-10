@@ -8,4 +8,5 @@ export default {
   white: '#fff',
   lightWhite: '#FFFFF0',
   black: '#000',
+  placeholder: '#BDBDBD',
 };

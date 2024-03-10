@@ -7,7 +7,6 @@ import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {PersistQueryClientProvider} from '@tanstack/react-query-persist-client';
 import appQueryClient, {asyncStoragePersister} from './config/appQueryClient';
 import RNBootSplash from 'react-native-bootsplash';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
 import MainNavigation from './navigation/MainNavigation';
 
 type AppProps = {};

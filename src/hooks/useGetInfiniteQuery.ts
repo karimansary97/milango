@@ -26,14 +26,16 @@ const useGetInfiniteQuery = <T>({
     },
 
     getNextPageParam: (lastPage, pages) => {
-      return lastPage?.incomplete_results ? undefined : pages.length + 1;
+      return lastPage?.items?.length === 0 || lastPage?.length === 0
+        ? undefined
+        : pages.length + 1;
     },
     ...options,
   });
 
   const allData = useMemo(() => {
     const newData: T[] = [];
-    data?.pages.map((page: any) => newData.push(...page?.items));
+    data?.pages?.map((page: any) => newData.push(...(page?.items || page)));
     return newData;
   }, [data]);
 

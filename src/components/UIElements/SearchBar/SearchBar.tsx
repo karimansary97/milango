@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC, memo, useState} from 'react';
 import {
   StyleSheet,
   View,
@@ -9,6 +9,7 @@ import {
 import unit from '../../../styles/unit';
 import {CloseIcon, SearchIcon} from '../../../styles/icons';
 import Button from '../Button';
+import colors from '../../../styles/colors';
 
 type SearchBarProps = {
   value?: string;
@@ -33,10 +34,10 @@ const SearchBar: FC<SearchBarProps> = ({
     <View style={[styles.container, style]}>
       <SearchIcon style={styles.SearchBarIcon} />
       <TextInput
-        placeholder={'Search'}
+        placeholder={'Search for user'}
         value={searchQueryText}
         onChangeText={onChangeSearch}
-        placeholderTextColor={'#BDBDBD'}
+        placeholderTextColor={colors.placeholder}
         style={[styles.searchInput]}
         autoFocus={keyboardOpen}
         {...props}
@@ -68,4 +69,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SearchBar;
+export default memo(SearchBar);
