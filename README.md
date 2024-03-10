@@ -38,7 +38,15 @@ https://github.com/karimansary97/milango/assets/46077002/b71eaf67-2f69-448e-b9e8
 git clone https://github.com/karimansary97/milango.git
 ```
 
-## Step 2: install dependencies 
+## Step 2: This app uses environment variables for configuration. Create a .env file at the root of your project and add the following:
+
+```bash
+# .env file
+API_BASE_URL=https://api.example.com
+```
+
+
+## Step 3: install dependencies 
 
 
 ```bash
