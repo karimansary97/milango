@@ -128,6 +128,8 @@ yarn android
 ```
 ### Libraries used
 ```
+ #axios
+ #react-native-masked-view/masked-view
  #react-navigation/native
  #react-navigation/native-stack
  #tanstack/query-async-storage-persister
