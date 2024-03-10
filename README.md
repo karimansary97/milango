@@ -144,8 +144,10 @@ yarn android
 │   ├── icons.ts
 │   └── unit.ts
 └── types
+    ├── UserRepo.type.ts
     ├── Users.type.ts
     └── global.d.ts
+
 ```
 ### Libraries used
 ```
