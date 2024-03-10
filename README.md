@@ -155,5 +155,6 @@ yarn android
  #react-native-safe-area-context
  #react-native-screens
  #react-native-svg
+ 
 ```
  
